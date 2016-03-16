@@ -101,6 +101,7 @@
 		98EC97F6144CADFA001F074D /* BrowseOverflowAppDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EC97F5144CADFA001F074D /* BrowseOverflowAppDelegateTests.m */; };
 		98EC97F8144CB11B001F074D /* BrowseOverflowAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A548DF130D3ABD003C4F0F /* BrowseOverflowAppDelegate.m */; };
 		98F82F2813E1863800668CAC /* TopicTableDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F82F2713E1863800668CAC /* TopicTableDataSourceTests.m */; };
+		CB26D8DF1C994C49007A1F4A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB26D8DE1C994C49007A1F4A /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -242,6 +243,7 @@
 		98EC97F5144CADFA001F074D /* BrowseOverflowAppDelegateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseOverflowAppDelegateTests.m; sourceTree = "<group>"; };
 		98F82F2613E1863800668CAC /* TopicTableDataSourceTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicTableDataSourceTests.h; sourceTree = "<group>"; };
 		98F82F2713E1863800668CAC /* TopicTableDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicTableDataSourceTests.m; sourceTree = "<group>"; };
+		CB26D8DE1C994C49007A1F4A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -383,6 +385,7 @@
 				98BE817B1430E16C00CAC4E9 /* AnswerCell.xib */,
 				98E4ABB514609AFE00B5C95B /* BrowseOverflowObjectConfiguration.h */,
 				98E4ABB614609AFE00B5C95B /* BrowseOverflowObjectConfiguration.m */,
+				CB26D8DE1C994C49007A1F4A /* Images.xcassets */,
 			);
 			path = BrowseOverflow;
 			sourceTree = "<group>";
@@ -513,6 +516,11 @@
 			attributes = {
 				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "Fuzzy Aliens Ltd.";
+				TargetAttributes = {
+					98A548CA130D3ABC003C4F0F = {
+						DevelopmentTeam = JKYZTVH438;
+					};
+				};
 			};
 			buildConfigurationList = 98A548C5130D3ABB003C4F0F /* Build configuration list for PBXProject "BrowseOverflow" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -538,6 +546,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98A548DA130D3ABD003C4F0F /* InfoPlist.strings in Resources */,
+				CB26D8DF1C994C49007A1F4A /* Images.xcassets in Resources */,
 				98A548E3130D3ABE003C4F0F /* MainWindow.xib in Resources */,
 				98A548E9130D3ABE003C4F0F /* RootViewController.xib in Resources */,
 				981F716913DD87A300061943 /* BrowseOverflowViewController.xib in Resources */,
@@ -751,7 +760,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets-2";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -759,11 +772,13 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "BrowseOverflow/BrowseOverflow-Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../json-framework/Classes/";
 				WRAPPER_EXTENSION = app;
 			};
@@ -773,18 +788,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets-2";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BrowseOverflow/BrowseOverflow-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "BrowseOverflow/BrowseOverflow-Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../json-framework/Classes/";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
